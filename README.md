@@ -1,1 +1,0 @@
-# Atividade-Matem-tica-Discreta

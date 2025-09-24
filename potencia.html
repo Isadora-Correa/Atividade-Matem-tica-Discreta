@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Potência (Recursiva)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8 m-4">
+        
+        <a href="index.html" class="text-blue-600 hover:underline mb-6 inline-block">← Voltar ao Menu</a>
+
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">Calculadora de Potência</h1>
+            <p class="text-gray-500 mt-2">Calcule b<sup>e</sup> usando uma função recursiva.</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+            <input type="number" id="baseInput" placeholder="Digite a base (b)" class="flex-grow w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition-shadow">
+            <input type="number" id="expoenteInput" placeholder="Digite o expoente (e)" class="flex-grow w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition-shadow">
+        </div>
+        <button id="botaoCalcular" class="w-full mt-4 bg-green-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-transform transform hover:scale-105">
+            Calcular Potência
+        </button>
+
+        <div id="resultado" class="mt-8 p-6 bg-gray-50 rounded-lg min-h-[100px] border border-gray-200">
+             <p class="text-gray-400 text-center">O resultado do cálculo aparecerá aqui.</p>
+        </div>
+
+    </div>
+    <script defer src="potencia.js"></script>
+</body>
+</html>
